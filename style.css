@@ -1,0 +1,90 @@
+:root {
+    --Green-200-lighter: hsl(148, 38%, 91%);
+    --Green-600-medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-500-medium: hsl(186, 15%, 59%);
+    --Grey-900-darker: hsl(187, 24%, 22%);
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background-color: var(--Green-200-lighter);
+}
+
+#submit-button {
+    width: 100%;
+    background-color: var(--Green-600-medium);
+    color: var(--White);
+}
+#submit-button:hover {
+    background-color: var(--Grey-900-darker);
+}
+
+form {
+    background-color: var(--White);
+    padding: 1.3em;
+    margin-block: 4em;
+    margin-inline: auto;
+    width: 80%;
+    max-width: 600px;
+    border: none;
+    border-radius: 20px;
+}
+
+input {
+    padding: 1em;
+    margin-inline: auto;
+    margin-block: 1em;
+    border-radius: 10px;
+    border: 1px solid var(--Grey-500-medium);
+}
+input:hover,
+textarea:hover,
+.radio-container:hover {
+    border: 1px solid var(--Green-600-medium);
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--Green-600-medium);
+}
+textarea {
+    margin-block: 1em;
+    border: 1px solid var(--Grey-500-medium);
+    border-radius: 10px;
+}
+.form-group input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+.radio-container {
+    padding: .2em;
+    box-sizing: border-box;
+    margin-block: 1em;
+    border: 1px solid var(--Grey-500-medium);
+    border-radius: 10px;
+}
+
+span {
+    font-size: 13px;
+   color: #ff0000;
+}
+
+@media(min-width: 768px) {
+    .name-container {
+        display: inline-block;
+        width: 49%;
+    }
+    .radio-container {
+        width: 49%;
+        display: inline-block;
+    }
+    .radio2,
+    .name-2 {
+        margin-inline-start: .4em; 
+    }
+}

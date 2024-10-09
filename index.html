@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <form action="" id="myForm" novalidate>
+
+    <h1>Contact Us</h1>
+
+    <!-- form fields -->
+
+    <div class="form-group name-container name-1">
+      <label for="firstName">First Name *</label>
+      <br>
+      <span id="errorfirstname"></span>
+      <input type="text" name="firstname" id="first-name">
+    </div>
+
+    <div class="form-group name-container name-2">
+      <label for="lastName">Last Name *</label>
+      <br>
+      <span id="errorlastname"></span>
+      <input type="text" name="lastname" id="last-name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address *</label>
+      <br>
+      <span id="erroremail"></span>
+      <input type="email" name="emailaddress" id="email-input">
+    </div>
+
+    <div class="form-radio">
+      <label for="Query">Query Type *</label>
+      <br>
+      <span id="errorquery"></span>
+      <br>
+      <div class="radio-container radio1">
+        <input value="General Enquiry" class="radio" type="radio" name="general" id="general-enquiry-input"> General Enquiry
+      </div>
+      <div class="radio-container radio2">
+        <input value="Support Request" class="radio" type="radio" name="support" id="support-request-input"> Support Request
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message *</label>
+      <br>
+      <span id="errormessage"></span>
+      <textarea name="message" id="" cols="30" rows="10" id="message-input"></textarea>
+    </div>
+
+    <div class="form-check">
+      <input type="checkbox" name="consent" id="consent-input">
+      I consent to being contacted by the team
+      <br>
+      <span id="errorconsent"></span>
+    </div>
+
+    <input href="mailto:daniellupo30@gmail.com" type="submit" value="Submit" id="submit-button">
+    <span id="errorsubmit"></span>
+
+
+
+  </form>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
